@@ -135,7 +135,12 @@ OpenClaw's web interface (Gateway Control UI + HTTP endpoints) is intended for *
   - Expected routes: `/__openclaw__/canvas/`, `/__openclaw__/a2ui/`.
   - This deployment model alone is not a security vulnerability.
 - Do **not** expose it to the public internet (no direct bind to `0.0.0.0`, no public reverse proxy). It is not hardened for public exposure.
-- If you need remote access, prefer an SSH tunnel or Tailscale serve/funnel (so the Gateway still binds to loopback), plus strong Gateway auth.
+- If you need remote access, prefer an SSH tunnel or Tailscale Serve/Funnel (so the Gateway still binds to loopback), plus strong Gateway auth. Use the OpenClaw CLI to configure Tailscale integration — do **not** invoke `tailscale serve` directly against the Gateway port:
+  ```bash
+  openclaw gateway --tailscale serve    # Tailnet-only (recommended)
+  openclaw gateway --tailscale funnel --auth password  # Public HTTPS
+  ```
+  Running `tailscale serve <port>` manually bypasses OpenClaw's auth-header validation and may allow unauthenticated access.
 - The Gateway HTTP surface includes the canvas host (`/__openclaw__/canvas/`, `/__openclaw__/a2ui/`). Treat canvas content as sensitive/untrusted and avoid exposing it beyond loopback unless you understand the risk.
 
 ## Runtime Requirements
@@ -151,6 +156,20 @@ Verify your Node.js version:
 
 ```bash
 node --version  # Should be v22.12.0 or later
+```
+
+### OpenClaw Version Floor
+
+CorCompass deployments require **OpenClaw >= 2026.2.23** as the minimum supported version. Versions prior to 2026.2.23 are not supported for production use and should be upgraded immediately.
+
+This floor addresses the following advisory:
+
+- **CVE-2026-27485** (High): Agent prompt-injection via crafted tool-response payloads. A malicious MCP tool response could inject instructions into the agent's context window and cause unintended command execution. Fixed in OpenClaw 2026.2.23 by sanitizing tool output before context insertion.
+
+Verify your OpenClaw version:
+
+```bash
+openclaw --version  # Should be 2026.2.23 or later
 ```
 
 ### Docker Security
