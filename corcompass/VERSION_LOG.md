@@ -136,3 +136,45 @@ The training system is designed to be:
 ---
 
 *CorCompass is a protected series of Cor Infinitum LLC, a Texas Protected Series Limited Liability Company.*
+
+---
+
+## v1.2.0 -- March 3, 2026
+
+### Agent Build SOP, Cost Governance, Wrapper Revenue System, and Budget Control
+
+This release adds the perfected agent build SOP, four niche wrapper product agents, a comprehensive cost governance framework, and the complete workspace template for new agent deployments.
+
+#### Standard Operating Procedure (new)
+
+| File | Purpose |
+|---|---|
+| `SOP-AGENT-BUILD.md` | Definitive 5-phase CorCompass agent build protocol incorporating all six OpenClaw architectural components, both memory tiers, and the five critical mistake corrections from community best practices |
+
+#### Core Identity (new)
+
+| File | Purpose |
+|---|---|
+| `core-identity/WORKSPACE-TEMPLATE.md` | Canonical fill-in-the-blank template for all five workspace files: IDENTITY.md, USER.md, MEMORY.md, HEARTBEAT.md, TOOLS.md, and config.json |
+
+#### Wrapper Product Agents (new)
+
+| File | Agent | Niche |
+|---|---|---|
+| `role-skills/meridian-outreach-closer.md` | Meridian | Cold outreach and appointment setting |
+| `role-skills/flux-ecommerce-operator.md` | Flux | Ecommerce operations and Shopify management |
+| `role-skills/vantage-deal-flow-analyst.md` | Vantage | Deal flow analysis and investment research |
+| `role-skills/steward-property-manager.md` | Steward | Property management and tenant communications |
+
+#### Reference Files (new)
+
+| File | Purpose |
+|---|---|
+| `reference/wrapper-business-model.md` | Optimized playbook for building and monetizing CorCompass wrapper products -- pricing tiers, go-to-market, and client handoff |
+| `reference/openclaw-studio-integration.md` | Assessment and Phase 6 client handoff guide for grp06/openclaw-studio -- the recommended client-facing systems cockpit |
+| `reference/cost-governance.md` | Three-tier model routing framework, heartbeat trap prevention, Freshman Rule, and $73-130/month budget stack for full autonomous operation |
+
+#### Library Index (updated)
+
+`LIBRARY_INDEX.md` updated to 44 indexed assets across 7 types. All new files tagged with searchable keywords.
+
