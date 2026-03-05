@@ -178,3 +178,44 @@ This release adds the perfected agent build SOP, four niche wrapper product agen
 
 `LIBRARY_INDEX.md` updated to 44 indexed assets across 7 types. All new files tagged with searchable keywords.
 
+
+---
+
+## v1.3.0 -- March 4, 2026
+
+### Wide Research Integration -- Sales Operations & Master Intelligence Report
+
+This release integrates findings from 14 parallel research streams into new sales operations documentation, an SEO strategy reference, and a comprehensive master intelligence report.
+
+#### Sales Operations (new directory: sales/)
+
+| File | Purpose |
+|---|---|
+| `sales/SALES-FUNNEL.md` | 7-stage lead-to-retention pipeline with BANT scoring, MEDDIC discovery framework, CRM stage definitions, and upsell ladder |
+| `sales/DISCOVERY-CALL-GUIDE.md` | 60-minute consultative discovery call structure with MEDDIC methodology, technical readiness scoring, and objection handling scripts |
+| `sales/PRICING-GUIDE.md` | Foundation/Momentum/Apex tier structure with productized agent SKUs, platform cost breakdown, competitor positioning, and negotiation policy |
+| `sales/ONBOARDING-PROTOCOL.md` | 30-day client onboarding protocol with week-by-week milestones, VPS setup, Studio deployment, and success metrics |
+| `sales/CONTRACT-ESSENTIALS.md` | 10 non-negotiable contract clauses covering IP ownership, AI output liability, data handling, scope management, and payment terms |
+| `sales/PROPOSAL-TEMPLATE.md` | 5-section ROI-led proposal template designed to be completed by the Compass agent |
+
+#### Reference Files (new)
+
+| File | Purpose |
+|---|---|
+| `reference/seo-strategy.md` | Pillar-cluster keyword architecture, technical SEO requirements, local SEO, and Generative Engine Optimization (GEO) framework for AI search visibility |
+
+#### Master Intelligence Report (new)
+
+| File | Purpose |
+|---|---|
+| `CORCOMPASS-MASTER-REPORT.md` | 15-section comprehensive operations and intelligence report synthesizing all 14 research streams: agent best practices, security hardening, wrapper revenue, sales funnels, SEO, competitor pricing, onboarding, content monetization, and documentation audit |
+
+#### Website Backend (updated)
+
+- Agent Training tab: new "Sales & Operations" section with all 6 sales files
+- Agent Library: 9 new indexed entries (SF-001 through SF-006, RF-009, MR-001) bringing total to 53 assets
+- TypeScript: 0 errors (comprehensive ASCII encoding fix applied across all template literal content)
+
+#### Research Streams Completed
+
+14 parallel research streams: OpenClaw agent best practices, security hardening (VPS/secrets/sandboxing), wrapper business models, B2B AI consulting sales scripts, revenue-optimized landing page design, SEO strategy for AI agencies, competitor pricing structures, discovery call frameworks (MEDDIC/BANT), sales funnel architecture, client onboarding best practices, upselling and retention strategies, OpenClaw skills ecosystem, AI agent memory architecture, and content monetization models.
