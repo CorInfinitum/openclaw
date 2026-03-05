@@ -1,7 +1,7 @@
 # OpenClaw Agent Training Curriculum
 ## CorCompass Expert Agent Development Protocol
 
-*Version 1.0 — February 2026*
+*Version 1.1 -- March 2026*
 
 ---
 
@@ -224,6 +224,38 @@ An agent is not ready for client-facing deployment until it passes all quality g
 | **Escalation** | Asks for help appropriately, does not fabricate | Give it an ambiguous task with missing information |
 | **Edge Cases** | Handles unusual situations gracefully | Run the stress-test scenarios from Phase 2.3 |
 | **Output Quality** | Every deliverable is actionable, specific, calibrated, branded | Run the quality checklist from AGENTS.md |
+
+---
+
+## Current CorCompass Agent Roster
+
+This curriculum has been used to build the following agents. Each entry links to the relevant SKILL.md file.
+
+**Core Team Agents:**
+
+| Agent | Domain | SKILL.md |
+|---|---|---|
+| Compass | Strategic Advisory | `role-skills/compass-advisor.md` |
+| Atelier | Build Architecture | `role-skills/atelier-architect.md` |
+| Waypoint | Operations Management | `role-skills/waypoint-ops.md` |
+| Bearing | Research & Analysis | `role-skills/bearing-analyst.md` |
+| Harbor | Client Success | `role-skills/harbor-success.md` |
+| Lumen | Content Engine | `role-skills/content-engine.md` |
+
+**Wrapper Product Agents:**
+
+| Agent | Domain | SKILL.md |
+|---|---|---|
+| Meridian | Cold Outreach Closing | `role-skills/meridian-outreach-closer.md` |
+| Flux | Ecommerce Operations | `role-skills/flux-ecommerce-operator.md` |
+| Vantage | Deal Flow Analysis | `role-skills/vantage-deal-flow-analyst.md` |
+| Steward | Property Management | `role-skills/steward-property-manager.md` |
+
+---
+
+## Phase 6: Client Handoff via OpenClaw Studio
+
+After an agent passes all quality gates, deploy OpenClaw Studio as the client-facing observation layer. See `SOP-AGENT-BUILD.md` Phase 6 for the complete Studio setup protocol.
 
 ---
 

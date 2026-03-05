@@ -1,6 +1,6 @@
 # CorCompass Operations Intelligence Report
 ## Agent Systems, Sales Architecture, and Revenue Strategy
-**Version 1.0 | March 2026 | Prepared by Manus AI for Cor Infinitum**
+**Version 1.0 | March 2026 | Prepared for Cor Infinitum -- Internal Use Only**
 
 ---
 

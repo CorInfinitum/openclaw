@@ -366,7 +366,37 @@ An agent is not ready for client-facing deployment until it passes all five qual
 
 ---
 
-## Appendix A — Audit Findings: Existing CorCompass Build
+## Phase 6 -- Client Handoff via OpenClaw Studio
+
+After an agent passes all five quality gates, the final step before client-facing deployment is configuring the client's observation and control layer using **OpenClaw Studio** (`github.com/grp06/openclaw-studio`).
+
+OpenClaw Studio is a self-hosted web dashboard that gives clients read-only visibility into their agent's workspace, session logs, memory state, and active tasks -- without exposing the underlying OpenClaw configuration or CorCompass methodology files.
+
+**Setup steps:**
+
+1. Deploy Studio to the client's VPS or a dedicated CorCompass-managed instance (Docker Compose, 5 minutes).
+2. Connect Studio to the client's OpenClaw workspace directory via the `WORKSPACE_PATH` environment variable.
+3. Configure `STUDIO_READ_ONLY=true` to prevent clients from modifying agent files directly.
+4. Set `ALLOWED_PATHS` to expose only the client-facing directories (session logs, task outputs, MEMORY.md) -- never expose `SOUL.md`, `STYLE.md`, `AGENTS.md`, or any CorCompass methodology files.
+5. Provide the client with their Studio URL and a brief orientation (10-minute screen share).
+
+**What clients see in Studio:**
+- Active and completed tasks
+- Session logs (filtered to their workspace)
+- Memory state (MEMORY.md contents)
+- File outputs (documents, reports, data files)
+
+**What clients cannot see:**
+- CorCompass identity files (SOUL.md, STYLE.md, AGENTS.md)
+- Internal methodology files (heartcor-methodology.md, service-tiers.md, etc.)
+- Other clients' workspaces
+- OpenClaw configuration files
+
+**Wrapper product agents** (Meridian, Flux, Vantage, Steward) follow the same Studio handoff protocol, but Studio is branded with the client's product name rather than the CorCompass name. Update the Studio `PRODUCT_NAME` environment variable accordingly.
+
+---
+
+## Appendix A -- Audit Findings: Existing CorCompass Build
 
 The following gaps were identified when auditing the existing CorCompass training files (v1.1.0) against this SOP:
 

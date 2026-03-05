@@ -1,8 +1,8 @@
-# CorCompass Agent Library — Master Index
+# CorCompass Agent Library -- Master Index
 
-**Series:** CorCompass Protected Series — Cor Infinitum LLC  
-**Version:** 1.1.0 — February 27, 2026  
-**Maintained by:** Waypoint (Operations Manager)  
+**Series:** CorCompass Protected Series -- Cor Infinitum LLC
+**Version:** 1.3.1 -- March 4, 2026
+**Maintained by:** Waypoint (Operations Manager)
 
 This index catalogs every compiled skill, tool, agent build, reference file, and training document in the CorCompass agent library. Each entry includes a type classification, load order, a brief description, and searchable keywords.
 
@@ -13,10 +13,10 @@ This index catalogs every compiled skill, tool, agent build, reference file, and
 | Column | Meaning |
 |---|---|
 | **ID** | Unique identifier for this asset |
-| **Type** | `identity` / `curriculum` / `agent` / `reference` / `prompt` |
+| **Type** | `identity` / `curriculum` / `agent` / `reference` / `prompt` / `sop` / `sales` |
 | **File** | Path relative to `agent-training/` |
 | **Load Order** | When to load this file relative to others |
-| **Keywords** | Searchable tags for this asset |
+| **Description** | Brief summary of the asset's purpose |
 
 ---
 
@@ -24,11 +24,22 @@ This index catalogs every compiled skill, tool, agent build, reference file, and
 
 | ID | Type | File | Load Order | Description |
 |---|---|---|---|---|
-| `CI-001` | identity | `core-identity/SOUL.md` | 1st — always | Collective brand identity: worldview, voice, vocabulary, opinions, boundaries |
-| `CI-002` | identity | `core-identity/STYLE.md` | 2nd — always | Voice and formatting guide: sentence structure, tone calibration, anti-patterns |
-| `CI-003` | identity | `core-identity/AGENTS.md` | 3rd — always | Universal operating principles: agent roster, escalation protocol, output standards |
+| `CI-001` | identity | `core-identity/SOUL.md` | 1st -- always | Collective brand identity: worldview, voice, vocabulary, opinions, boundaries |
+| `CI-002` | identity | `core-identity/STYLE.md` | 2nd -- always | Voice and formatting guide: sentence structure, tone calibration, anti-patterns |
+| `CI-003` | identity | `core-identity/AGENTS.md` | 3rd -- always | Universal operating principles: agent roster, escalation protocol, output standards |
+| `CI-004` | identity | `core-identity/WORKSPACE-TEMPLATE.md` | Setup only | Canonical 5-file workspace scaffold: SKILL.md, USER.md, MEMORY.md, HEARTBEAT.md, IDENTITY.md |
 
-**Keywords:** `identity` `brand-voice` `soul` `style` `agents` `corcompass` `operating-principles` `tone` `vocabulary` `escalation` `worldview` `luxury` `consulting`
+**Keywords:** `identity` `brand-voice` `soul` `style` `agents` `corcompass` `operating-principles` `tone` `vocabulary` `escalation` `worldview` `luxury` `consulting` `workspace` `scaffold` `user-profile` `memory` `heartbeat`
+
+---
+
+## Standard Operating Procedures
+
+| ID | Type | File | Description |
+|---|---|---|---|
+| `SOP-001` | sop | `SOP-AGENT-BUILD.md` | Definitive CorCompass agent build, deployment, and maintenance protocol incorporating all OpenClaw community best practices |
+
+**Keywords:** `sop` `build-protocol` `deployment` `maintenance` `workspace-structure` `memory-tiers` `dmscope` `exec-modes` `token-efficiency` `cron` `heartbeat` `multi-agent` `isolation` `five-critical-mistakes` `60-minute-fast-track` `quality-gates` `audit`
 
 ---
 
@@ -36,10 +47,10 @@ This index catalogs every compiled skill, tool, agent build, reference file, and
 
 | ID | Type | File | Load Order | Description |
 |---|---|---|---|---|
-| `CU-001` | curriculum | `curriculum/CURRICULUM.md` | 4th — before role skill | Five-phase agent development protocol overview and phase map |
+| `CU-001` | curriculum | `curriculum/CURRICULUM.md` | 4th -- before role skill | Five-phase agent development protocol overview and phase map |
 | `CU-002` | prompt | `curriculum/prompts/phase-1-prompts.md` | Phase 1 | 7 deep research prompts for building agent knowledge bases from scratch |
 | `CU-003` | prompt | `curriculum/prompts/phase-2-prompts.md` | Phase 2 | 4 skill construction prompts for writing SKILL.md files and reference documents |
-| `CU-004` | prompt | `curriculum/prompts/phase-3-5-prompts.md` | Phases 3–5 | Plugin assembly, validation, scaling, and bonus prompts |
+| `CU-004` | prompt | `curriculum/prompts/phase-3-5-prompts.md` | Phases 3-5 | Plugin assembly, validation, scaling, and bonus prompts |
 
 **Keywords:** `curriculum` `training` `five-phase` `prompts` `knowledge-base` `skill-construction` `plugin-assembly` `validation` `scaling` `agent-development` `onboarding`
 
@@ -49,30 +60,46 @@ This index catalogs every compiled skill, tool, agent build, reference file, and
 
 | ID | Type | File | Agent | Domain | Load Order |
 |---|---|---|---|---|---|
-| `RS-001` | agent | `role-skills/compass-advisor.md` | Compass | Strategic Advisor | 5th — after identity |
-| `RS-002` | agent | `role-skills/atelier-architect.md` | Atelier | Build Architect | 5th — after identity |
-| `RS-003` | agent | `role-skills/waypoint-ops.md` | Waypoint | Operations Manager | 5th — after identity |
-| `RS-004` | agent | `role-skills/bearing-analyst.md` | Bearing | Research Analyst | 5th — after identity |
-| `RS-005` | agent | `role-skills/harbor-success.md` | Harbor | Client Success | 5th — after identity |
-| `RS-006` | agent | `role-skills/content-engine.md` | Lumen | Content Production & Monetization | 5th — after identity |
+| `RS-001` | agent | `role-skills/compass-advisor.md` | Compass | Strategic Advisor | 5th -- after identity |
+| `RS-002` | agent | `role-skills/atelier-architect.md` | Atelier | Build Architect | 5th -- after identity |
+| `RS-003` | agent | `role-skills/waypoint-ops.md` | Waypoint | Operations Manager | 5th -- after identity |
+| `RS-004` | agent | `role-skills/bearing-analyst.md` | Bearing | Research Analyst | 5th -- after identity |
+| `RS-005` | agent | `role-skills/harbor-success.md` | Harbor | Client Success | 5th -- after identity |
+| `RS-006` | agent | `role-skills/content-engine.md` | Lumen | Content Production & Monetization | 5th -- after identity |
+| `RS-007` | agent | `role-skills/meridian-outreach-closer.md` | Meridian | Cold Outreach & Closing | 5th -- after identity |
+| `RS-008` | agent | `role-skills/flux-ecommerce-operator.md` | Flux | Ecommerce Operations | 5th -- after identity |
+| `RS-009` | agent | `role-skills/vantage-deal-flow-analyst.md` | Vantage | Deal Flow & Acquisition | 5th -- after identity |
+| `RS-010` | agent | `role-skills/steward-property-manager.md` | Steward | Property Management | 5th -- after identity |
 
-### Compass — Strategic Advisor
+### Compass -- Strategic Advisor
 **Keywords:** `compass` `strategic-advisor` `client-intake` `heartcor-assessment` `service-tier-recommendation` `discovery` `qualification` `consulting` `intake-questions` `tier-selection` `flow-scan` `coherence-sprint` `harbor-build`
 
-### Atelier — Build Architect
+### Atelier -- Build Architect
 **Keywords:** `atelier` `build-architect` `openclaw-configuration` `skill-files` `plugin-assembly` `blueprint-design` `tool-configuration` `technical-build` `agent-setup` `workflow-design` `automation-architecture`
 
-### Waypoint — Operations Manager
+### Waypoint -- Operations Manager
 **Keywords:** `waypoint` `operations-manager` `project-management` `milestone-tracking` `workflow-design` `timeline` `sprint-planning` `task-management` `delivery` `coordination` `status-reporting`
 
-### Bearing — Research Analyst
+### Bearing -- Research Analyst
 **Keywords:** `bearing` `research-analyst` `market-research` `competitive-analysis` `data-synthesis` `industry-intelligence` `competitor-profiling` `trend-analysis` `similarweb` `sec-filings` `financial-data`
 
-### Harbor — Client Success
+### Harbor -- Client Success
 **Keywords:** `harbor` `client-success` `onboarding` `relationship-management` `renewals` `referrals` `retention` `satisfaction` `check-ins` `upsell` `client-portal` `long-term-engagement`
 
-### Lumen — Content Engine
+### Lumen -- Content Engine
 **Keywords:** `lumen` `content-engine` `content-monetization` `short-form-video` `openclaw-pipeline` `claude-scripting` `capcut` `content-rewards` `pop-culture` `faceless-content` `tiktok` `youtube-shorts` `instagram-reels` `evergreen-content` `brand-campaigns` `passive-income` `content-production` `video-automation` `topic-clusters` `sprint-protocol`
+
+### Meridian -- Cold Outreach Closer
+**Keywords:** `meridian` `cold-outreach` `closer` `sales` `lead-generation` `email-sequences` `linkedin` `objection-handling` `pipeline` `crm` `follow-up` `appointment-setting` `b2b-sales` `wrapper-product`
+
+### Flux -- Ecommerce Operator
+**Keywords:** `flux` `ecommerce` `shopify` `product-listings` `inventory` `order-management` `customer-service` `abandoned-cart` `conversion-optimization` `dropshipping` `supplier-relations` `wrapper-product`
+
+### Vantage -- Deal Flow Analyst
+**Keywords:** `vantage` `deal-flow` `acquisition` `due-diligence` `investment-analysis` `financial-modeling` `market-sizing` `term-sheets` `cap-table` `real-estate` `private-equity` `wrapper-product`
+
+### Steward -- Property Manager
+**Keywords:** `steward` `property-management` `tenant-relations` `lease-management` `maintenance-requests` `rent-collection` `vacancy` `listing` `inspection` `real-estate-operations` `wrapper-product`
 
 ---
 
@@ -84,6 +111,10 @@ This index catalogs every compiled skill, tool, agent build, reference file, and
 | `RF-002` | reference | `reference/corcompass-service-tiers.md` | Compass, Harbor | Service tier definitions: Flow Scan, Coherence Sprint, Harbor Build |
 | `RF-003` | reference | `reference/content-rewards-platform.md` | Lumen | Content Rewards platform briefing, campaign matching protocol, payout structure |
 | `RF-004` | reference | `reference/content-production-stack.md` | Lumen, Atelier | OpenClaw + Claude + CapCut pipeline configuration, template specs, quality control |
+| `RF-005` | reference | `reference/openclaw-studio-integration.md` | Atelier, Waypoint | OpenClaw Studio assessment, client-facing cockpit setup, Phase 6 handoff protocol |
+| `RF-006` | reference | `reference/wrapper-business-model.md` | Compass, Atelier | CorCompass wrapper product revenue model: five niche verticals, pricing, client acquisition |
+| `RF-007` | reference | `reference/cost-governance.md` | Waypoint, Atelier | Agent budget control: 3-tier model routing, heartbeat trap prevention, $73-130/month stack |
+| `RF-008` | reference | `reference/seo-strategy.md` | Bearing, Compass | CorCompass SEO strategy: pillar-cluster architecture, GEO framework, local SEO, content calendar |
 
 ### HeartCor Methodology
 **Keywords:** `heartcor` `methodology` `heart-dimension` `logic-dimension` `coherence-dimension` `diagnostic` `misalignment` `emotional-intelligence` `operational-logic` `assessment` `client-evaluation` `consulting-framework`
@@ -97,11 +128,62 @@ This index catalogs every compiled skill, tool, agent build, reference file, and
 ### Content Production Stack
 **Keywords:** `content-production-stack` `openclaw-configuration` `claude-scripting` `capcut-templates` `clip-library` `source-management` `quality-control` `pipeline-architecture` `batch-processing` `tts-voiceover` `vertical-video` `automation`
 
+### OpenClaw Studio Integration
+**Keywords:** `openclaw-studio` `client-cockpit` `systems-dashboard` `agent-monitoring` `workspace-viewer` `client-handoff` `phase-6` `deployment` `vps` `self-hosted` `client-facing` `transparency`
+
+### Wrapper Business Model
+**Keywords:** `wrapper-business` `saas-reseller` `white-label` `niche-agents` `revenue-model` `pricing-tiers` `client-acquisition` `productized-service` `monthly-retainer` `setup-fee` `five-verticals`
+
+### Cost Governance
+**Keywords:** `cost-governance` `budget-control` `token-efficiency` `model-routing` `freshman-rule` `heartbeat-trap` `context-management` `haiku` `sonnet` `opus` `cost-savings` `operational-efficiency`
+
+### SEO Strategy
+**Keywords:** `seo` `search-engine-optimization` `pillar-cluster` `geo` `generative-engine-optimization` `local-seo` `content-calendar` `keyword-research` `backlinks` `technical-seo` `schema-markup` `google-business-profile`
+
+---
+
+## Sales & Operations Files
+
+| ID | Type | File | Agent(s) | Description |
+|---|---|---|---|---|
+| `SO-001` | sales | `sales/SALES-FUNNEL.md` | Compass, Harbor | Complete sales funnel: lead gen to retention, MEDDIC qualification, objection handling |
+| `SO-002` | sales | `sales/DISCOVERY-CALL-GUIDE.md` | Compass | 45-minute discovery call script, HeartCor diagnostic questions, tier recommendation logic |
+| `SO-003` | sales | `sales/PRICING-GUIDE.md` | Compass, Harbor | Competitor pricing analysis, CorCompass rate card, discount policy, ROI framing |
+| `SO-004` | sales | `sales/ONBOARDING-PROTOCOL.md` | Harbor, Waypoint | 30-day client onboarding protocol: kickoff, setup, training, first-value milestone |
+| `SO-005` | sales | `sales/CONTRACT-ESSENTIALS.md` | Compass | Contract terms, IP ownership, scope creep protection, payment terms, termination clauses |
+| `SO-006` | sales | `sales/PROPOSAL-TEMPLATE.md` | Compass | Proposal structure: executive summary, scope, timeline, investment, next steps |
+
+### Sales Funnel
+**Keywords:** `sales-funnel` `lead-generation` `qualification` `meddic` `closing` `objection-handling` `follow-up` `pipeline` `crm` `conversion` `b2b-sales` `consulting-sales`
+
+### Discovery Call Guide
+**Keywords:** `discovery-call` `intake` `heartcor-diagnostic` `qualification` `tier-recommendation` `call-script` `questions` `pain-points` `budget` `timeline` `decision-maker`
+
+### Pricing Guide
+**Keywords:** `pricing` `rate-card` `competitor-analysis` `roi-framing` `discount-policy` `value-based-pricing` `retainer` `setup-fee` `tier-pricing` `negotiation`
+
+### Onboarding Protocol
+**Keywords:** `onboarding` `kickoff` `30-day` `first-value` `client-setup` `training` `expectations` `communication-cadence` `deliverables` `success-metrics`
+
+### Contract Essentials
+**Keywords:** `contract` `terms` `ip-ownership` `scope-creep` `payment-terms` `termination` `liability` `confidentiality` `nda` `legal` `protection`
+
+### Proposal Template
+**Keywords:** `proposal` `executive-summary` `scope` `timeline` `investment` `next-steps` `deliverables` `client-presentation` `closing-document`
+
+---
+
+## Master Report
+
+| ID | Type | File | Description |
+|---|---|---|---|
+| `MR-001` | reference | `CORCOMPASS-MASTER-REPORT.md` | 15-section intelligence report: agent builds, security, wrapper revenue, competitor pricing, onboarding, content monetization, documentation audit |
+
+**Keywords:** `master-report` `intelligence` `best-practices` `competitor-analysis` `security` `agent-architecture` `sales-funnel` `seo` `content-monetization` `onboarding` `documentation-audit` `comprehensive`
+
 ---
 
 ## OpenClaw Skills Referenced
-
-The following OpenClaw built-in and custom skills are referenced across the agent library:
 
 | Skill ID | Skill Name | Used By | Category | Keywords |
 |---|---|---|---|---|
@@ -119,8 +201,6 @@ The following OpenClaw built-in and custom skills are referenced across the agen
 ---
 
 ## Topic Clusters (Content Engine)
-
-Pre-loaded topic clusters for the Lumen Content Engine pipeline:
 
 | Cluster ID | Name | Tier | Keywords |
 |---|---|---|---|
@@ -141,19 +221,23 @@ Pre-loaded topic clusters for the Lumen Content Engine pipeline:
 
 ## Quick Search Guide
 
-**To find files for a specific agent:** Search the agent's codename (compass, atelier, waypoint, bearing, harbor, lumen).
+**To find files for a specific agent:** Search the agent codename (`compass`, `atelier`, `waypoint`, `bearing`, `harbor`, `lumen`, `meridian`, `flux`, `vantage`, `steward`).
 
-**To find files for a specific task:** Search the task keyword (e.g., `intake`, `research`, `content-production`, `monetization`, `onboarding`).
+**To find files for a specific task:** Search the task keyword (e.g., `intake`, `research`, `content-production`, `monetization`, `onboarding`, `sales`, `pricing`).
 
-**To find files for a specific platform:** Search the platform name (e.g., `tiktok`, `youtube`, `instagram`, `content-rewards`).
+**To find files for a specific platform:** Search the platform name (e.g., `tiktok`, `youtube`, `instagram`, `content-rewards`, `openclaw-studio`).
 
-**To find files for a specific methodology:** Search the methodology name (e.g., `heartcor`, `blueprint`, `sprint-protocol`).
+**To find files for a specific methodology:** Search the methodology name (e.g., `heartcor`, `blueprint`, `sprint-protocol`, `meddic`).
 
 **To find all agent builds:** Filter by type `agent`.
 
 **To find all reference files:** Filter by type `reference`.
 
 **To find all training prompts:** Filter by type `prompt`.
+
+**To find all sales documents:** Filter by type `sales`.
+
+**To find all SOPs:** Filter by type `sop`.
 
 ---
 
@@ -162,13 +246,37 @@ Pre-loaded topic clusters for the Lumen Content Engine pipeline:
 When initializing any CorCompass agent session, load files in this order:
 
 ```
-1. core-identity/SOUL.md          (CI-001) — collective identity
-2. core-identity/STYLE.md         (CI-002) — voice and formatting
-3. core-identity/AGENTS.md        (CI-003) — operating principles
-4. curriculum/CURRICULUM.md       (CU-001) — development protocol (training sessions only)
-5. role-skills/[agent-name].md    (RS-00X) — domain expertise
-6. reference/[relevant-file].md   (RF-00X) — task-specific reference (as needed)
+1. core-identity/SOUL.md                    (CI-001) -- collective identity
+2. core-identity/STYLE.md                   (CI-002) -- voice and formatting
+3. core-identity/AGENTS.md                  (CI-003) -- operating principles
+4. curriculum/CURRICULUM.md                 (CU-001) -- development protocol (training sessions only)
+5. role-skills/[agent-name].md              (RS-00X) -- domain expertise
+6. reference/[relevant-file].md             (RF-00X) -- task-specific reference (as needed)
+7. sales/[relevant-file].md                 (SO-00X) -- sales/ops reference (as needed)
 ```
+
+For new agent workspace setup, also load:
+```
+8. core-identity/WORKSPACE-TEMPLATE.md      (CI-004) -- workspace file scaffold
+9. SOP-AGENT-BUILD.md                       (SOP-001) -- build and deployment protocol
+```
+
+---
+
+## Asset Count Summary
+
+| Category | Count |
+|---|---|
+| Core Identity Files | 4 |
+| Standard Operating Procedures | 1 |
+| Training Curriculum & Prompts | 4 |
+| Agent Role Skills | 10 |
+| Reference Files | 8 |
+| Sales & Operations Files | 6 |
+| Master Report | 1 |
+| OpenClaw Skills Referenced | 10 |
+| Topic Clusters | 12 |
+| **Total Indexed Assets** | **56** |
 
 ---
 

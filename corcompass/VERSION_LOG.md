@@ -219,3 +219,36 @@ This release integrates findings from 14 parallel research streams into new sale
 #### Research Streams Completed
 
 14 parallel research streams: OpenClaw agent best practices, security hardening (VPS/secrets/sandboxing), wrapper business models, B2B AI consulting sales scripts, revenue-optimized landing page design, SEO strategy for AI agencies, competitor pricing structures, discovery call frameworks (MEDDIC/BANT), sales funnel architecture, client onboarding best practices, upselling and retention strategies, OpenClaw skills ecosystem, AI agent memory architecture, and content monetization models.
+
+---
+
+## v1.3.1 -- Full-Stack Audit and Fixes (March 2026)
+
+### Fixes Applied
+
+**Code:**
+- Fixed critical runtime error in Agent Training tab: `Markdown.tsx` was calling `Streamdown` with `plugins` prop (new API) instead of `remarkPlugins`/`rehypePlugins` (v1.4.0 API). Agent Training tab now renders markdown correctly.
+- Removed stale `shiki` v4 dev dependency that conflicted with `streamdown`'s internal shiki v3 dependency.
+- Added "Dev Only" label to demo credentials on Login page to clarify intent.
+
+**Documentation:**
+- `AGENTS.md`: Added Lumen (Content Engine) to the core team roster. Added Wrapper Product Agents table (Meridian, Flux, Vantage, Steward) with SKILL.md links.
+- `CURRICULUM.md`: Updated to v1.1. Added complete agent roster table (10 agents). Added Phase 6 Studio handoff step.
+- `SOP-AGENT-BUILD.md`: Added Phase 6 -- Client Handoff via OpenClaw Studio. Documents Studio setup, `ALLOWED_PATHS` configuration, what clients can and cannot see, and wrapper agent branding protocol.
+- `CORCOMPASS-MASTER-REPORT.md`: Fixed attribution from "Prepared by Manus AI" to "Prepared for Cor Infinitum -- Internal Use Only".
+- `LIBRARY_INDEX.md`: Fully rebuilt. Now indexes all 55 assets across v1.0.0 through v1.3.0 (was stale at v1.1.0 with 34 entries).
+
+### Audit Summary
+
+| Category | Finding | Status |
+|---|---|---|
+| TypeScript | 0 errors (confirmed) | Clean |
+| Runtime errors | Markdown component API mismatch | Fixed |
+| Server health | Running, no errors | Clean |
+| Broken imports | None found | Clean |
+| Branding inconsistencies | "Prepared by Manus AI" in Master Report | Fixed |
+| Documentation gaps | AGENTS.md missing 5 agents | Fixed |
+| Documentation gaps | CURRICULUM.md missing 5 agents + Phase 6 | Fixed |
+| Documentation gaps | SOP missing Studio Phase 6 | Fixed |
+| Documentation gaps | LIBRARY_INDEX.md stale (34 of 55 assets) | Fixed |
+| Demo credentials | Displayed without "Dev Only" label | Labeled |

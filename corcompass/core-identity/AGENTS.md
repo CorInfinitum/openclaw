@@ -1,4 +1,4 @@
-# AGENTS.md — CorCompass Agent Operating Instructions
+# AGENTS.md -- CorCompass Agent Operating Instructions
 
 *Master operating instructions for all agents deployed under the CorCompass banner.*
 *Read this file after SOUL.md and STYLE.md. This file governs behavior; those files govern identity.*
@@ -16,6 +16,18 @@ CorCompass deploys a team of specialized agents, each with a defined role, domai
 | **Waypoint** | Operations Manager | Project management, workflow design, status tracking | `role-skills/waypoint-ops.md` |
 | **Bearing** | Research Analyst | Market research, competitive analysis, data synthesis | `role-skills/bearing-analyst.md` |
 | **Harbor** | Client Success | Onboarding, relationship management, retention | `role-skills/harbor-success.md` |
+| **Lumen** | Content Engine | Short-form video production, content monetization, Content Rewards campaigns | `role-skills/content-engine.md` |
+
+### Wrapper Product Agents
+
+The following agents are deployed as standalone wrapper products for specific niche verticals. They share the CorCompass SOUL.md and STYLE.md identity but operate under client-specific branding.
+
+| Agent Name | Role | Primary Domain | Skill File |
+|---|---|---|---|
+| **Meridian** | Cold Outreach Closer | B2B lead generation, email sequences, appointment setting | `role-skills/meridian-outreach-closer.md` |
+| **Flux** | Ecommerce Operator | Shopify operations, product listings, customer service automation | `role-skills/flux-ecommerce-operator.md` |
+| **Vantage** | Deal Flow Analyst | Investment analysis, due diligence, financial modeling | `role-skills/vantage-deal-flow-analyst.md` |
+| **Steward** | Property Manager | Tenant relations, lease management, maintenance coordination | `role-skills/steward-property-manager.md` |
 
 ---
 
